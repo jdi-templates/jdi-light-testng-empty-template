@@ -14,9 +14,9 @@ Powered by [JDI Light](https://github.com/jdi-testing/jdi-light) and Selenium
 
 6. Parameters that can be changed:
 - File src/resourses/common.properties There is a setting to run tests in headless mode, so if you want to see browser, you should remove ´--headless´ parameter
-- File src/resources/test.properties contains all settings for JDI. Review them and change if it's required. Remember that values in {} can be changes via maven run parameters
+- File src/resources/test.properties contains all settings for JDI. Review them and change if it's required. Remember that values in {} can be changed via maven run parameters
 
 7. TestNg Retry and before after listeners: You can also modify rules of retry tests (now it is 1 retry for each test)
    and actions before/after all tests (now it prints test name and result) in **testng** folder
 
-8. Template also contain Github actions run template in .github folder. Remove it if you don't use GitHub to run tests
+8. Template also contain GitHub actions run template in .github folder. Remove it if you don't use GitHub to run tests
