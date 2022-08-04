@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Aug 04 02:24:25 GMT 2022","Thu Aug 04 02:24:29 GMT 2022","3561","Site tests","Tests","tests.ExampleTests","tests.ExampleTests","openPageTest","openPageTest",""
+"passed","Thu Aug 04 02:24:32 GMT 2022","Thu Aug 04 02:24:37 GMT 2022","4756","Site tests","Tests","tests.ExampleTests","tests.ExampleTests","openPageTest","openPageTest",""
