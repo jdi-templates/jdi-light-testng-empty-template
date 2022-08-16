@@ -8,7 +8,7 @@ public class ExampleTests implements TestsInit {
 
     @Test
     public void openPageTest() {
-        MySite.homePage.open();
-        MySite.homePage.checkOpened();
+        MySite.firstPage.open();
+        MySite.firstPage.checkOpened();
     }
 }
