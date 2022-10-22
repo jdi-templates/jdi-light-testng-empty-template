@@ -50,6 +50,13 @@ jobs:
         id: build
         run: mvn clean install -DskipTests -ntp ${{ env.ASPECT_ARGS }}
 
+      - name: Start Selenoid
+        uses: Xotabu4/selenoid-github-action@v2
+        id: start-selenoid
+
+      - name: Check Selenoid has been started
+        run: curl http://localhost:4444/status
+
       - name: Tests
         id: functests
         timeout-minutes: 10
