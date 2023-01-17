@@ -18,16 +18,27 @@
         <allure.testng>2.17.2</allure.testng>
         <allure.maven>2.10.0</allure.maven>
         <jetty.version>9.4.12.RC2</jetty.version>
-        <jdi.version>1.4.6</jdi.version>
+        <jdi.version>1.4.7</jdi.version>
+        <!-- The value is for example, use our own domain value -->
         <domain>https://jdi-testing.github.io/jdi-light/</domain>
         <driver.remote.url/>
         <log.level>INFO</log.level>
         <log4j2.version>2.17.1</log4j2.version>
-        <!-- - - add-opens java.base/java.lang=ALL-UNNAMED is needed for JDK 16+ -->
+        <!-- for JDK 16+ use profile jdk16 -->
         <aspectj.args></aspectj.args>
     </properties>
 
     <profiles>
+        <profile>
+            <id>jdk16</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <aspectj.args>--add-opens java.base/java.lang=ALL-UNNAMED</aspectj.args>
+            </properties>
+        </profile>
+
         <profile>
             <id>ci</id>
             <activation>
