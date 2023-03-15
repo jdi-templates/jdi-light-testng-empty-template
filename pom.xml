@@ -59,13 +59,14 @@
             <version>${jdi.version}</version>
         </dependency>
              
-        <!-- If you need Material UI library      
+        <!-- If you need Material UI library -->      
         <dependency>
             <groupId>com.epam.jdi</groupId>
             <artifactId>jdi-light-material-ui</artifactId>
             <version>${jdi.version}</version>
         </dependency>
-        -->
+        <!-- end for material ui -->
+             
         <!-- If you need Vuetify library     
         <dependency>
             <groupId>com.epam.jdi</groupId>
