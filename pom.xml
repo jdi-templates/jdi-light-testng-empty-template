@@ -58,6 +58,21 @@
             <artifactId>jdi-light-html</artifactId>
             <version>${jdi.version}</version>
         </dependency>
+             
+        <!-- If you need Material UI library      
+        <dependency>
+            <groupId>com.epam.jdi</groupId>
+            <artifactId>jdi-light-material-ui</artifactId>
+            <version>${jdi.version}</version>
+        </dependency>
+        -->
+        <!-- If you need Vuetify library     
+        <dependency>
+            <groupId>com.epam.jdi</groupId>
+            <artifactId>jdi-light-vuetify</artifactId>
+            <version>${jdi.version}</version>
+        </dependency>
+        -->
 
         <!--Allure-->
         <dependency>
