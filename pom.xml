@@ -65,7 +65,7 @@
             <artifactId>jdi-light-material-ui</artifactId>
             <version>${jdi.version}</version>
         </dependency>
-        <!-- end for material ui -->
+        -->
              
         <!-- If you need Vuetify library     
         <dependency>
