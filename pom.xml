@@ -59,7 +59,7 @@
             <version>${jdi.version}</version>
         </dependency>
              
-        <!-- If you need Material UI library -->      
+        <!-- If you need Material UI library      
         <dependency>
             <groupId>com.epam.jdi</groupId>
             <artifactId>jdi-light-material-ui</artifactId>
