@@ -10,6 +10,8 @@ Powered by [JDI Light](https://github.com/jdi-testing/jdi-light) and Selenium
 
 3. There is no any existing tests, only project structure without any specific namespaces and files
 
+4. USE Maven profeli jdk16 in case on JDK16+ usage
+
 5. Reporting: Allure is enabled, after running tests just run **allure:serve** in maven plugins (allure should be installed locally)
 
 6. Parameters that can be changed:
