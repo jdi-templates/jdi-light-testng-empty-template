@@ -32,7 +32,7 @@
         <profile>
             <id>jdk16</id>
             <activation>
-                <activeByDefault>false</activeByDefault>
+                <jdk>[16, 20]</jdk>
             </activation>
             <properties>
                 <aspectj.args>--add-opens java.base/java.lang=ALL-UNNAMED</aspectj.args>
