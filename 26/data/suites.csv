@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 01 18:58:38 GMT 2023","Fri Sep 01 18:58:41 GMT 2023","3284","Site tests","Tests","tests.ExampleTests","tests.ExampleTests","openPageTest","openPageTest",""
