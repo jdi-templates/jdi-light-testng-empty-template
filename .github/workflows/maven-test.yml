@@ -1,7 +1,6 @@
 name: Run tests
 env:
   ALLURE_VERSION: "2.10.0"
-  SUREFIRE_ARGS: "--add-opens java.base/java.lang=ALL-UNNAMED"
 
 on:
   push:
@@ -22,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [ 8, 11, 17 ]
+        java: [ 11, 17 ]
 
     steps:
       - uses: actions/checkout@v3
@@ -34,21 +33,9 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Set parameters for AspectJ
-        id: aspect_j_params
-        if: ${{ matrix.java > 15 }}
-        run: |
-          echo "ASPECT_ARGS=-Daspectj.args="\"$SUREFIRE_ARGS\" >> $GITHUB_ENV
-
-      - name: Set parameters for AspectJ
-        id: aspect_j_params_empty
-        if: ${{ matrix.java < 16 }}
-        run: |
-          echo "ASPECT_ARGS=-Daspectj.args=''" >> $GITHUB_ENV
-
       - name: Build with Maven
         id: build
-        run: mvn clean install -DskipTests -ntp ${{ env.ASPECT_ARGS }}
+        run: mvn clean install -DskipTests -ntp 
 
       - name: Start Selenoid
         uses: Xotabu4/selenoid-github-action@v2
